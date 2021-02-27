@@ -49,7 +49,6 @@ class DetailsActivity : AppCompatActivity() {
         val json = intent.getStringExtra("puppyJson")
         val puppy = Gson().fromJson(json, Puppy::class.java)
 
-
         setContent {
             MyTheme {
                 PuppyDetails(puppy)
